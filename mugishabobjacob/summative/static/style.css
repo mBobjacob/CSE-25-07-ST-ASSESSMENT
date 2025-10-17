@@ -1,0 +1,44 @@
+body {
+    background-color: #f4f5f7;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-card {
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-control {
+    height: 55px;
+    font-size: 1rem;
+    border: 1px solid #a8e0e8;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #5ce0e6;
+    box-shadow: none;
+}
+
+.btn-login {
+    background-color: #5cd6d6;
+    color: white;
+    font-weight: 600;
+    height: 50px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #5b2a5f; /* Purple hover effect */
+}
+
+.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.is-valid {
+    border-color: #28a745 !important;
+}
