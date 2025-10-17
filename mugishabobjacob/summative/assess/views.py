@@ -8,13 +8,13 @@ def register(request):
         form = UserForm(request.Post)
         if form.is_valid():
             form.save()
-            return redirect('')
+            return redirect('register')
     else:
         form = UserForm()
     context = {
         'form': form
     }
-    return render (request, 'registration.html', context)
+    return render (request, 'register.html', context)
 
 def login_user(request):
     if request.method == "POST":
