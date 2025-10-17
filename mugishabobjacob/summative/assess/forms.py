@@ -11,10 +11,10 @@ class UserForm(UserCreationForm):
             'password1',
             'password2',
         ]
-    username = forms.CharField(error_messages = {"required": "Please Enter the Username"})
-    email = forms.EmailField(error_messages = {"required": "Please Enter the email"})
-    password1 = forms.CharField(error_messages = {"required": "Please Enter the password"})
-    password2 = forms.CharField(error_messages = {"required": "Please Enter the password"})
+        username = forms.CharField(error_messages = {"required": "Please Enter the Username"})
+        email = forms.EmailField(error_messages = {"required": "Please Enter the email"})
+        password1 = forms.CharField(error_messages = {"required": "Please Enter the password"})
+        password2 = forms.CharField(error_messages = {"required": "Please Enter the password"})
 
 class UserAuthenticationForm(AuthenticationForm):
     error_messages = {

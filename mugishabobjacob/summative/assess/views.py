@@ -22,7 +22,7 @@ def login_user(request):
         if form.is_valid():
             user = form.get_user()
             login(request, user)
-            return redirect('')
+            return redirect('success.html')
     else:
         form = UserAuthenticationForm()
     context = {
