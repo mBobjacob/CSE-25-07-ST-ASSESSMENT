@@ -1,4 +1,5 @@
-{% {% extends "base.html" %} %}
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
 
 {% block content %}
 
@@ -6,6 +7,7 @@
         <div class="login-card shadow-sm p-5 rounded-3">
             <h3 class="text-center mb-4">Login</h3>
             <form id="loginForm" novalidate>
+                {% csrf_token %}
                 <div class="form-group mb-3">
                     <input type="text" class="form-control" id="email" placeholder="Email or Phone Number" required>
                 </div>
